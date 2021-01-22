@@ -17,7 +17,7 @@ canvas.width = window.innerWidth;
 canvas.height = window.innerHeight - 10;
 
 var background = new Image();
-background.src = "..\letter.jpg";
+background.src = "../letter.jpg";
 
 // Make sure the image is loaded first otherwise nothing will draw.
 background.onload = function(){
