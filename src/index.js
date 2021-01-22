@@ -16,6 +16,14 @@ const canvas = document.getElementById("canvas");
 canvas.width = window.innerWidth;
 canvas.height = window.innerHeight - 10;
 
+var background = new Image();
+background.src = "letter.jpg";
+
+// Make sure the image is loaded first otherwise nothing will draw.
+background.onload = function(){
+    ctx.drawImage(background,0,0);   
+}
+
 const context = canvas.getContext("2d");
 
 const varyColour = sourceColour => {
