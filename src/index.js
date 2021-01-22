@@ -1,5 +1,5 @@
 
-import tinycolor from "node_module";
+import tinycolor from "node_module ";
 // Brush colour and size
 let colour;
 const strokeWidth = 40;
